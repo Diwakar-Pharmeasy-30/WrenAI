@@ -47,6 +47,7 @@ class SqlQuestionResultResponse(BaseModel):
     questions: Optional[list[str]] = None
     trace_id: Optional[str] = None
 
+
 class SqlQuestionService:
     def __init__(
         self,

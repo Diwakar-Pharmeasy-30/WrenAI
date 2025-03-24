@@ -51,6 +51,7 @@ class SqlAnswerResultResponse(BaseModel):
     error: Optional[SqlAnswerError] = None
     trace_id: Optional[str] = None
 
+
 class SqlAnswerService:
     def __init__(
         self,

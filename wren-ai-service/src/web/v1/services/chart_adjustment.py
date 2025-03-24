@@ -91,6 +91,7 @@ class ChartAdjustmentResultResponse(BaseModel):
     error: Optional[ChartAdjustmentError] = None
     trace_id: Optional[str] = None
 
+
 class ChartAdjustmentService:
     def __init__(
         self,

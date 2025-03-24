@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     """
 
     host: str = Field(default="127.0.0.1", alias="WREN_AI_SERVICE_HOST")
-    port: int = Field(default=5555, alias="WREN_AI_SERVICE_PORT")
+    port: int = Field(default=5556, alias="WREN_AI_SERVICE_PORT")
 
     # indexing and retrieval config
     column_indexing_batch_size: int = Field(default=50)

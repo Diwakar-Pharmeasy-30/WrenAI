@@ -9,7 +9,7 @@ def test_settings_default_values():
     with patch("src.config.Settings.config_loader", return_value=[]):
         settings = Settings()
         assert settings.host == "127.0.0.1"
-        assert settings.port == 5555
+        assert settings.port == 5556
 
         assert settings.column_indexing_batch_size == 50
         assert settings.table_retrieval_size == 10

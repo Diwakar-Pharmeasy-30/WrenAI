@@ -163,15 +163,15 @@ class AskDetailsService:
         except Exception as e:
             logger.exception(f"ask-details pipeline - OTHERS: {e}")
 
-            self._ask_details_results[ask_details_request.query_id] = (
-                AskDetailsResultResponse(
-                    status="failed",
-                    error=AskDetailsResultResponse.AskDetailsError(
-                        code="OTHERS",
-                        message=str(e),
-                    ),
-                    trace_id=trace_id,
-                )
+            self._ask_details_results[
+                ask_details_request.query_id
+            ] = AskDetailsResultResponse(
+                status="failed",
+                error=AskDetailsResultResponse.AskDetailsError(
+                    code="OTHERS",
+                    message=str(e),
+                ),
+                trace_id=trace_id,
             )
 
             results["metadata"]["error_type"] = "OTHERS"

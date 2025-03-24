@@ -17,7 +17,7 @@ import streamlit as st
 import yaml
 from dotenv import load_dotenv
 
-WREN_AI_SERVICE_BASE_URL = "http://localhost:5556"
+WREN_AI_SERVICE_BASE_URL = "http://0.0.0.0:5556"
 WREN_ENGINE_API_URL = "http://localhost:8080"
 WREN_IBIS_API_URL = "http://localhost:8000"
 POLLING_INTERVAL = 0.5

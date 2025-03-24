@@ -40,6 +40,8 @@ services:
       - 6334:6334
     networks:
       - wren
+    volumes:
+      - ~/.wrenai/data:/qdrant/storage
 
   ui:
     image: ghcr.io/canner/wren-ui:${WREN_UI_VERSION}

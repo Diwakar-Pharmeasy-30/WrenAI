@@ -109,6 +109,7 @@ class GetResponse(BaseModel):
     error: Optional[dict]
     trace_id: Optional[str] = None
 
+
 @router.get(
     "/relationship-recommendations/{id}",
     response_model=GetResponse,
